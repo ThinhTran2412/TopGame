@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Height of the fixed navbar */
+}
+
+.game-background {
+    margin-bottom: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img/pattern.png');
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.header-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2{
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.top-games {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.top-games article {
+    margin: 10px 0;
+}
+
+.game-main-content {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.game-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.game-image:hover {
+    transform: scale(1.1);
+}
+
+.game-info {
+    flex: 1;
+    color: #fff;
+    padding: 10px;
+    min-width: 300px;
+}
+
+.game-info h3 {
+    font-size: 1.5em;
+    color: #ff6347;
+    margin: 10px 0;
+}
+
+.game-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+.game-additional-info {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+}
+
+.requirements-container {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 15px;
+}
+
+.system-requirements {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.system-requirements.minimum {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.system-requirements h4 {
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.system-requirements.minimum h4 {
+    color: #ffd700;
+}
+
+.system-requirements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.system-requirements li {
+    color: #ccc;
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.buy-link {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buy-link:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h4 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #3498db;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    padding: 0.5rem 1rem;
+    background-color: #34495e;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #34495e;
+}
+
+.copyright p {
+    margin: 0.5rem 0;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+.nav-bar {
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #3498db;
+}
+
+.nav-bar .back-link::before {
+    content: "←";
+    margin-right: 8px;
+}
+
+/* Table of Contents Styles */
+.table-of-contents {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: rgba(44, 62, 80, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-of-contents h2 {
+    color: #ffd700;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.table-of-contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.table-of-contents li {
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.table-of-contents li:hover {
+    transform: translateX(10px);
+}
+
+.table-of-contents a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 1.2rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.table-of-contents a:hover {
+    background: rgba(52, 152, 219, 0.2);
+    border-left-color: #ffd700;
+    color: #ffd700;
+}
